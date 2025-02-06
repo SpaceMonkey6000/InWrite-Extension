@@ -65,6 +65,7 @@ def get_latest_news(topic):
         url = f"https://newsapi.org/v2/everything?q={topic}&sortBy=popularity&apiKey={NEWS_API_KEY}"
         response = requests.get(url)
         articles = response.json().get('articles', [])
+        print(articles)
         return articles[0] if articles else None
     except Exception as e:
         st.error(f"Error fetching news: {e}")
@@ -104,6 +105,7 @@ def generate_linkedin_post(prompt):
             headers=headers,
             data=json.dumps(payload)
         )
+        print(response.json())
         return response.json()['choices'][0]['message']['content']
     except Exception as e:
         st.error(f"Error generating post: {e}")
