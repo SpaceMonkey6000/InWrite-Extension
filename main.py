@@ -43,7 +43,7 @@ st.markdown("""
 # API configurations (Replace with your actual API keys)
 NEWS_API_KEY = st.secrets['NEWS_API_KEY']
 OPENROUTER_API_KEY = st.secrets['OPENROUTER_API_KEY']
-OPENROUTER_MODEL = "openai/gpt-3.5-turbo"  # Change this to your preferred model
+OPENROUTER_MODEL = "deepseek/deepseek-r1-distill-llama-70b:free"  # Change this to your preferred model
 
 # Header Section
 st.markdown("<h1 style='text-align: center; margin-bottom: 2rem;'>📝 LinkedIn Post Generator</h1>", unsafe_allow_html=True)
