@@ -41,8 +41,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # API configurations (Replace with your actual API keys)
-NEWS_API_KEY = "b752a0d1e2644510a92fb3426c1d6088"
-OPENROUTER_API_KEY = "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"
+NEWS_API_KEY = st.secrets['NEWS_API_KEY']
+OPENROUTER_API_KEY = st.secrets['OPENROUTER_API_KEY']
 OPENROUTER_MODEL = "openai/gpt-3.5-turbo"  # Change this to your preferred model
 
 # Header Section
